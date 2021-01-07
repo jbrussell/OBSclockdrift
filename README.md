@@ -9,7 +9,7 @@ It should be noted that drift estimates produced by default here may be improved
 
 **a1_mseed2sac_rmresp.py** : Preprocessing script that converts miniseed data to SAC format. The script also removes instrument response to displacement and provides the option to downsample.
 
-**a2_ccf_ambnoise.m** : Performs ambient-noise cross-correlation functions (CCF) for specified station pairs. By default, only the pressure channel is considered
+**a2_ccf_ambnoise.m** : Performs ambient-noise cross-correlation functions (CCF) for specified station pairs. By default, only the pressure channel is considered. Based on the [MATnoise](https://github.com/jbrussell/MATnoise) package.
 
 **a3_measure_ccf_drfit.m** : Cross-correlate daily CCFs with reference stack in order to determine systematic clock drift rate.
 
